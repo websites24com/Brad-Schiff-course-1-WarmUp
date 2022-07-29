@@ -163,7 +163,7 @@ function amazingFunction() {
 amazingFunction();
 console.log("in the global scope", myName);
 */
-
+/*
 // Context
 
 let john = {
@@ -187,3 +187,45 @@ function breathe() {
 }
 
 breathe.call(john);
+M
+*/
+
+/*** Miscellanous ***/
+
+// 1. Anonymous functions - without name
+
+document.addEventListener("click", function () {
+  alert("Thank you for clicking");
+});
+
+// 2. Arrow functions
+// a) if all is in the same line, we do not {}
+// b) arrow function does not have its own THIS keyword
+
+document.addEventListener("click", () => alert("Arrow function"));
+
+let myNumbers = [10, 500, 200];
+let doubledNumbers = myNumbers.map((x) => x * 2);
+
+console.log(doubledNumbers);
+
+// 3. Function hosting
+//
+
+cool();
+
+function cool() {
+  console.log("This is super cool");
+}
+
+// 4. Template literals ``
+
+let myname = "Brad";
+
+console.log(`Hello my name is ${myname} and it is cool!`);
+
+// 5. Semicolons
+// it is the end of statmant if we have two lines in one
+
+let myname1 = "Brad";
+console.log(`Hello my name is ${myname} and it is cool!`);
